@@ -1,0 +1,57 @@
+# ============================================================
+# Archivos temporales y de respaldo de MATLAB
+# ============================================================
+
+*.asv
+*.m~
+*.mlx~
+*.mat~
+*.fig~
+*.tmp
+*.bak
+*.log
+
+# ============================================================
+# Archivos generados por MATLAB / Simulink
+# ============================================================
+
+slprj/
+sccprj/
+codegen/
+*.slxc
+*.mex*
+*.autosave
+
+# ============================================================
+# Archivos temporales de MATLAB Projects
+# ============================================================
+
+resources/project/Root.type.Files/
+resources/project/*.xml
+
+# ============================================================
+# Archivos temporales del sistema operativo
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# Archivos auxiliares de exportación LaTeX / PDF
+# ============================================================
+
+*.aux
+*.toc
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# ============================================================
+# Carpetas temporales de exportación
+# ============================================================
+
+temp/
+tmp/
+cache/
