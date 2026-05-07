@@ -74,7 +74,7 @@ El módulo está organizado en cuatro bloques:
 ## Estructura del repositorio
 
 ```text
-Modulo_Senales_Sistemas/
+modulo_senales_sistemas/
 │
 ├── README.md
 ├── index.md
