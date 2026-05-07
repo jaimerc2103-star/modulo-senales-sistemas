@@ -2,44 +2,344 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Señales y Sistemas con MATLAB Live Script</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #102a43;
+            color: #ffffff;
+            padding: 25px 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .sidebar p {
+            font-size: 13px;
+            color: #bcccdc;
+            margin-bottom: 25px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #d9e2ec;
+            text-decoration: none;
+            padding: 8px 10px;
+            border-radius: 6px;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        .sidebar a:hover {
+            background: #243b53;
+            color: #ffffff;
+        }
+
+        .sidebar .bloque {
+            margin-top: 18px;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #9fb3c8;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        .content {
+            margin-left: 300px;
+            padding: 40px;
+            width: calc(100% - 300px);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f4c81, #102a43);
+            color: white;
+            padding: 45px;
+            border-radius: 18px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .hero h1 {
+            margin-top: 0;
+            font-size: 38px;
+        }
+
+        .hero h2 {
+            font-weight: normal;
+            color: #d9e2ec;
+        }
+
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            color: #102a43;
+            border-bottom: 2px solid #d9e2ec;
+            padding-bottom: 8px;
+        }
+
+        .chapter-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .chapter-list li {
+            background: #f0f4f8;
+            margin-bottom: 10px;
+            padding: 12px 14px;
+            border-radius: 8px;
+            border-left: 5px solid #0f4c81;
+        }
+
+        .chapter-list a {
+            color: #0f4c81;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .chapter-list a:hover {
+            text-decoration: underline;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+
+        .publicado {
+            background: #d9f99d;
+            color: #365314;
+        }
+
+        .desarrollo {
+            background: #fee2e2;
+            color: #7f1d1d;
+        }
+
+        footer {
+            text-align: center;
+            color: #627d98;
+            font-size: 14px;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        @media (max-width: 850px) {
+            .layout {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+            .content {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Señales y Sistemas con MATLAB Live Script</h1>
-    <h2>Teoría, simulación y aplicaciones para ingeniería</h2>
+    <div class="layout">
 
-    <p>
-        Bienvenido al módulo interactivo de Señales y Sistemas desarrollado con MATLAB Live Script.
-        Este sitio reúne los capítulos exportados en formato HTML para su consulta académica.
-    </p>
+        <aside class="sidebar">
+            <h2>Señales y Sistemas</h2>
+            <p>MATLAB Live Script</p>
 
-    <h2>Índice del módulo</h2>
+            <a href="#presentacion">Presentación</a>
+            <a href="#objetivo">Objetivo</a>
+            <a href="#resultados">Resultados de aprendizaje</a>
 
-    <h3>Bloque 1. Representación de señales en el dominio del tiempo</h3>
+            <div class="bloque">Bloque 1</div>
+            <a href="#bloque1">Representación de señales</a>
+            <a href="cap_01_introduccion_senales_sistemas.html">Capítulo 1</a>
 
-    <ul>
-        <li>
-            <a href="cap_01_introduccion_senales_sistemas.html">
-                Capítulo 1. Introducción a señales y sistemas
-            </a>
-        </li>
-    </ul>
+            <div class="bloque">Bloque 2</div>
+            <a href="#bloque2">Sistemas LTI y convolución</a>
 
-    <h3>Bloque 2. Sistemas lineales invariantes en el tiempo y convolución</h3>
-    <p>Capítulos en desarrollo.</p>
+            <div class="bloque">Bloque 3</div>
+            <a href="#bloque3">Análisis en frecuencia</a>
 
-    <h3>Bloque 3. Análisis en frecuencia y transformadas</h3>
-    <p>Capítulos en desarrollo.</p>
+            <div class="bloque">Bloque 4</div>
+            <a href="#bloque4">Aplicaciones integradoras</a>
+        </aside>
 
-    <h3>Bloque 4. Aplicaciones integradoras</h3>
-    <p>Capítulos en desarrollo.</p>
+        <main class="content">
 
-    <hr>
+            <section class="hero">
+                <h1>Señales y Sistemas con MATLAB Live Script</h1>
+                <h2>Teoría, simulación y aplicaciones para ingeniería</h2>
+                <p>
+                    Módulo académico interactivo desarrollado para el aprendizaje progresivo
+                    de señales, sistemas, convolución, análisis en frecuencia y transformadas.
+                </p>
+            </section>
 
-    <p>
-        Autor: Jaime Rojas C<br>
-        Universidad Católica de Cuenca<br>
-        Carrera de Ingeniería en Telecomunicaciones con Inteligencia Artificial
-    </p>
+            <section class="card" id="presentacion">
+                <h2>Presentación</h2>
+                <p>
+                    El estudio de señales y sistemas constituye una base fundamental para áreas
+                    como telecomunicaciones, electrónica, control automático, procesamiento digital
+                    de señales, instrumentación, automatización e inteligencia artificial aplicada.
+                </p>
+
+                <p>
+                    Este módulo utiliza MATLAB Live Script como entorno de aprendizaje interactivo,
+                    permitiendo integrar texto académico, ecuaciones, código ejecutable, gráficos
+                    e interpretación de resultados en un solo documento.
+                </p>
+            </section>
+
+            <section class="card" id="objetivo">
+                <h2>Objetivo general</h2>
+                <p>
+                    Comprender, representar, analizar y simular señales y sistemas mediante
+                    herramientas matemáticas y computacionales, con énfasis en el uso de MATLAB
+                    para el análisis en el dominio del tiempo y de la frecuencia.
+                </p>
+            </section>
+
+            <section class="card" id="resultados">
+                <h2>Resultados de aprendizaje</h2>
+                <ol>
+                    <li>Representar señales continuas y discretas en el dominio del tiempo.</li>
+                    <li>Clasificar señales según sus propiedades matemáticas y físicas.</li>
+                    <li>Aplicar operaciones básicas sobre señales.</li>
+                    <li>Calcular energía y potencia de señales.</li>
+                    <li>Analizar propiedades fundamentales de sistemas.</li>
+                    <li>Identificar sistemas lineales invariantes en el tiempo.</li>
+                    <li>Aplicar la convolución para determinar la respuesta de sistemas LTI.</li>
+                    <li>Analizar señales periódicas mediante Series de Fourier.</li>
+                    <li>Interpretar señales en el dominio de la frecuencia.</li>
+                    <li>Aplicar la Transformada de Fourier, Laplace y Z.</li>
+                </ol>
+            </section>
+
+            <section class="card" id="bloque1">
+                <h2>Bloque 1. Representación de señales en el dominio del tiempo</h2>
+
+                <ul class="chapter-list">
+                    <li>
+                        <a href="cap_01_introduccion_senales_sistemas.html">
+                            Capítulo 1. Introducción a señales y sistemas
+                        </a>
+                        <span class="status publicado">Publicado</span>
+                    </li>
+
+                    <li>
+                        Capítulo 2. Clasificación de señales
+                        <span class="status desarrollo">En desarrollo</span>
+                    </li>
+
+                    <li>
+                        Capítulo 3. Señales elementales continuas y discretas
+                        <span class="status desarrollo">En desarrollo</span>
+                    </li>
+
+                    <li>
+                        Capítulo 4. Operaciones básicas con señales
+                        <span class="status desarrollo">En desarrollo</span>
+                    </li>
+
+                    <li>
+                        Capítulo 5. Energía y potencia de señales
+                        <span class="status desarrollo">En desarrollo</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card" id="bloque2">
+                <h2>Bloque 2. Sistemas lineales invariantes en el tiempo y convolución</h2>
+
+                <ul class="chapter-list">
+                    <li>Capítulo 6. Introducción y clasificación de sistemas <span class="status desarrollo">En desarrollo</span></li>
+                    <li>Capítulo 7. Sistemas lineales invariantes en el tiempo <span class="status desarrollo">En desarrollo</span></li>
+                    <li>Capítulo 8. Respuesta al impulso <span class="status desarrollo">En desarrollo</span></li>
+                    <li>Capítulo 9. Convolución discreta <span class="status desarrollo">En desarrollo</span></li>
+                    <li>Capítulo 10. Convolución continua <span class="status desarrollo">En desarrollo</span></li>
+                </ul>
+            </section>
+
+            <section class="card" id="bloque3">
+                <h2>Bloque 3. Análisis en frecuencia y transformadas</h2>
+
+                <ul class="chapter-list">
+                    <li>Capítulo 11. Introducción al dominio de la frecuencia <span class="status desarrollo">En desarrollo</span></li>
+                    <li>Capítulo 12. Series de Fourier <span class="status desarrollo">En desarrollo</span></li>
+                    <li>Capítulo 13. Transformada de Fourier <span class="status desarrollo">En desarrollo</span></li>
+                    <li>Capítulo 14. Espectro de amplitud y fase <span class="status desarrollo">En desarrollo</span></li>
+                    <li>Capítulo 15. Transformada de Laplace <span class="status desarrollo">En desarrollo</span></li>
+                    <li>Capítulo 16. Transformada Z y sistemas discretos <span class="status desarrollo">En desarrollo</span></li>
+                </ul>
+            </section>
+
+            <section class="card" id="bloque4">
+                <h2>Bloque 4. Aplicaciones integradoras</h2>
+
+                <ul class="chapter-list">
+                    <li>Capítulo 17. Aplicaciones en telecomunicaciones y procesamiento digital de señales <span class="status desarrollo">En desarrollo</span></li>
+                    <li>Capítulo 18. Proyecto final integrador <span class="status desarrollo">En desarrollo</span></li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Autor</h2>
+                <p>
+                    <strong>Rómulo Romero</strong><br>
+                    Universidad Católica de Cuenca<br>
+                    Carrera de Ingeniería en Telecomunicaciones con Inteligencia Artificial
+                </p>
+            </section>
+
+            <footer>
+                Módulo de Señales y Sistemas con MATLAB Live Script · GitHub Pages
+            </footer>
+
+        </main>
+    </div>
 </body>
 </html>
