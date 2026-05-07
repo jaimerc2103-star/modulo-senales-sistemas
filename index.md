@@ -43,7 +43,7 @@ Al finalizar el estudio del módulo, el estudiante será capaz de:
 
 ## Bloque 1. Representación de señales en el dominio del tiempo
 
-### Capítulo 1. Introducción a señales y sistemas
+### [Capítulo 1. Introducción a señales y sistemas](docs/cap_01_introduccion_senales_sistemas.html)
 
 - Introducción general a la asignatura.
 - Concepto de señal.
