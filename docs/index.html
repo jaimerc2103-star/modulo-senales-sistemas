@@ -6,10 +6,7 @@
     <title>Señales y Sistemas con MATLAB Live Script</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+        * { box-sizing: border-box; scroll-behavior: smooth; }
 
         body {
             margin: 0;
@@ -19,13 +16,10 @@
             line-height: 1.6;
         }
 
-        .layout {
-            display: flex;
-            min-height: 100vh;
-        }
+        .layout { display: flex; min-height: 100vh; }
 
         .sidebar {
-            width: 300px;
+            width: 315px;
             background: #102a43;
             color: #ffffff;
             padding: 25px 20px;
@@ -72,9 +66,9 @@
         }
 
         .content {
-            margin-left: 300px;
+            margin-left: 315px;
             padding: 40px;
-            width: calc(100% - 300px);
+            width: calc(100% - 315px);
         }
 
         .hero {
@@ -86,15 +80,8 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.12);
         }
 
-        .hero h1 {
-            margin-top: 0;
-            font-size: 38px;
-        }
-
-        .hero h2 {
-            font-weight: normal;
-            color: #d9e2ec;
-        }
+        .hero h1 { margin-top: 0; font-size: 38px; }
+        .hero h2 { font-weight: normal; color: #d9e2ec; }
 
         .card {
             background: white;
@@ -110,10 +97,7 @@
             padding-bottom: 8px;
         }
 
-        .chapter-list {
-            list-style: none;
-            padding-left: 0;
-        }
+        .chapter-list { list-style: none; padding-left: 0; }
 
         .chapter-list li {
             background: #f0f4f8;
@@ -129,9 +113,7 @@
             text-decoration: none;
         }
 
-        .chapter-list a:hover {
-            text-decoration: underline;
-        }
+        .chapter-list a:hover { text-decoration: underline; }
 
         .status {
             display: inline-block;
@@ -141,14 +123,15 @@
             margin-left: 8px;
         }
 
-        .publicado {
-            background: #d9f99d;
-            color: #365314;
-        }
+        .publicado { background: #d9f99d; color: #365314; }
+        .desarrollo { background: #fee2e2; color: #7f1d1d; }
 
-        .desarrollo {
-            background: #fee2e2;
-            color: #7f1d1d;
+        .nota {
+            background: #e0f2fe;
+            border-left: 5px solid #0284c7;
+            padding: 14px 16px;
+            border-radius: 8px;
+            color: #0f172a;
         }
 
         footer {
@@ -160,32 +143,16 @@
         }
 
         @media (max-width: 850px) {
-            .layout {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                position: relative;
-                width: 100%;
-                height: auto;
-            }
-
-            .content {
-                margin-left: 0;
-                width: 100%;
-                padding: 20px;
-            }
-
-            .hero h1 {
-                font-size: 28px;
-            }
+            .layout { flex-direction: column; }
+            .sidebar { position: relative; width: 100%; height: auto; }
+            .content { margin-left: 0; width: 100%; padding: 20px; }
+            .hero h1 { font-size: 28px; }
         }
     </style>
 </head>
 
 <body>
     <div class="layout">
-
         <aside class="sidebar">
             <h2>Señales y Sistemas</h2>
             <p>MATLAB Live Script</p>
@@ -201,19 +168,25 @@
             <a href="cap_03_senales_elementales.html">Capítulo 3</a>
             <a href="cap_04_operaciones_senales.html">Capítulo 4</a>
             <a href="cap_05_energia_potencia_senales.html">Capítulo 5</a>
+
             <div class="bloque">Bloque 2</div>
             <a href="#bloque2">Sistemas LTI y convolución</a>
-            
+            <a href="cap_06_clasificacion_sistemas.html">Capítulo 6</a>
+            <a href="cap_07_sistemas_lti.html">Capítulo 7</a>
+            <a href="cap_08_respuesta_impulso.html">Capítulo 8</a>
+            <a href="cap_09_convolucion_discreta.html">Capítulo 9</a>
+            <a href="cap_10_convolucion_continua.html">Capítulo 10</a>
 
             <div class="bloque">Bloque 3</div>
             <a href="#bloque3">Análisis en frecuencia</a>
+            <a href="cap_11_dominio_frecuencia.html">Capítulo 11</a>
+            <a href="cap_12_series_fourier.html">Capítulo 12</a>
 
             <div class="bloque">Bloque 4</div>
             <a href="#bloque4">Aplicaciones integradoras</a>
         </aside>
 
         <main class="content">
-
             <section class="hero">
                 <h1>Señales y Sistemas con MATLAB Live Script</h1>
                 <h2>Teoría, simulación y aplicaciones para ingeniería</h2>
@@ -230,7 +203,6 @@
                     como telecomunicaciones, electrónica, control automático, procesamiento digital
                     de señales, instrumentación, automatización e inteligencia artificial aplicada.
                 </p>
-
                 <p>
                     Este módulo utiliza MATLAB Live Script como entorno de aprendizaje interactivo,
                     permitiendo integrar texto académico, ecuaciones, código ejecutable, gráficos
@@ -257,71 +229,39 @@
                     <li>Analizar propiedades fundamentales de sistemas.</li>
                     <li>Identificar sistemas lineales invariantes en el tiempo.</li>
                     <li>Aplicar la convolución para determinar la respuesta de sistemas LTI.</li>
-                    <li>Analizar señales periódicas mediante Series de Fourier.</li>
                     <li>Interpretar señales en el dominio de la frecuencia.</li>
-                    <li>Aplicar la Transformada de Fourier, Laplace y Z.</li>
+                    <li>Analizar señales periódicas mediante Series de Fourier.</li>
+                    <li>Relacionar el análisis en frecuencia con filtros y telecomunicaciones.</li>
                 </ol>
             </section>
 
             <section class="card" id="bloque1">
                 <h2>Bloque 1. Representación de señales en el dominio del tiempo</h2>
-
                 <ul class="chapter-list">
-                    <li>
-                        <a href="cap_01_introduccion_senales_sistemas.html">
-                            Capítulo 1. Introducción a señales y sistemas
-                        </a>
-                        <span class="status publicado">Publicado</span>
-                    </li>
-
-                    <li>
-                        <a href="cap_02_clasificacion_senales.html">
-                        Capítulo 2. Clasificación de señales
-                        </a>
-                        <span class="status publicado">Pulicado</span>
-                    </li>
-
-                    <li>
-                        <a href="cap_03_senales_elementales.html">
-                        Capítulo 3. Señales elementales continuas y discretas
-                        </a>
-                        <span class="status publicado">Publicado</span>
-                    </li>
-
-                    <li>
-                        <a href="cap_04_operaciones_senales.html">
-                        Capítulo 4. Operaciones básicas con señales
-                        </a>
-                        <span class="status publicado">Publicacdo</span>
-                    </li>
-
-                    <li>
-                        <a href="cap_05_energia_potencia_senales.html">
-                        Capítulo 5. Energía y potencia de señales
-                        </a>   
-                        <span class="status publicado">Publicado</span>
-                    </li>
+                    <li><a href="cap_01_introduccion_senales_sistemas.html">Capítulo 1. Introducción a señales y sistemas</a><span class="status publicado">Publicado</span></li>
+                    <li><a href="cap_02_clasificacion_senales.html">Capítulo 2. Clasificación de señales</a><span class="status publicado">Publicado</span></li>
+                    <li><a href="cap_03_senales_elementales.html">Capítulo 3. Señales elementales continuas y discretas</a><span class="status publicado">Publicado</span></li>
+                    <li><a href="cap_04_operaciones_senales.html">Capítulo 4. Operaciones básicas con señales</a><span class="status publicado">Publicado</span></li>
+                    <li><a href="cap_05_energia_potencia_senales.html">Capítulo 5. Energía y potencia de señales</a><span class="status publicado">Publicado</span></li>
                 </ul>
             </section>
 
             <section class="card" id="bloque2">
                 <h2>Bloque 2. Sistemas lineales invariantes en el tiempo y convolución</h2>
-
                 <ul class="chapter-list">
-                    <li>Capítulo 6. Introducción y clasificación de sistemas <span class="status desarrollo">En desarrollo</span></li>
-                    <li>Capítulo 7. Sistemas lineales invariantes en el tiempo <span class="status desarrollo">En desarrollo</span></li>
-                    <li>Capítulo 8. Respuesta al impulso <span class="status desarrollo">En desarrollo</span></li>
-                    <li>Capítulo 9. Convolución discreta <span class="status desarrollo">En desarrollo</span></li>
-                    <li>Capítulo 10. Convolución continua <span class="status desarrollo">En desarrollo</span></li>
+                    <li><a href="cap_06_clasificacion_sistemas.html">Capítulo 6. Introducción y clasificación de sistemas</a><span class="status publicado">Publicado</span></li>
+                    <li><a href="cap_07_sistemas_lti.html">Capítulo 7. Sistemas lineales invariantes en el tiempo</a><span class="status publicado">Publicado</span></li>
+                    <li><a href="cap_08_respuesta_impulso.html">Capítulo 8. Respuesta al impulso</a><span class="status publicado">Publicado</span></li>
+                    <li><a href="cap_09_convolucion_discreta.html">Capítulo 9. Convolución discreta</a><span class="status publicado">Publicado</span></li>
+                    <li><a href="cap_10_convolucion_continua.html">Capítulo 10. Convolución continua</a><span class="status publicado">Publicado</span></li>
                 </ul>
             </section>
 
             <section class="card" id="bloque3">
                 <h2>Bloque 3. Análisis en frecuencia y transformadas</h2>
-
                 <ul class="chapter-list">
-                    <li>Capítulo 11. Introducción al dominio de la frecuencia <span class="status desarrollo">En desarrollo</span></li>
-                    <li>Capítulo 12. Series de Fourier <span class="status desarrollo">En desarrollo</span></li>
+                    <li><a href="cap_11_dominio_frecuencia.html">Capítulo 11. Introducción al dominio de la frecuencia</a><span class="status publicado">Publicado</span></li>
+                    <li><a href="cap_12_series_fourier.html">Capítulo 12. Series de Fourier</a><span class="status publicado">Publicado</span></li>
                     <li>Capítulo 13. Transformada de Fourier <span class="status desarrollo">En desarrollo</span></li>
                     <li>Capítulo 14. Espectro de amplitud y fase <span class="status desarrollo">En desarrollo</span></li>
                     <li>Capítulo 15. Transformada de Laplace <span class="status desarrollo">En desarrollo</span></li>
@@ -331,7 +271,6 @@
 
             <section class="card" id="bloque4">
                 <h2>Bloque 4. Aplicaciones integradoras</h2>
-
                 <ul class="chapter-list">
                     <li>Capítulo 17. Aplicaciones en telecomunicaciones y procesamiento digital de señales <span class="status desarrollo">En desarrollo</span></li>
                     <li>Capítulo 18. Proyecto final integrador <span class="status desarrollo">En desarrollo</span></li>
@@ -339,9 +278,18 @@
             </section>
 
             <section class="card">
+                <h2>Archivos publicados</h2>
+                <p class="nota">
+                    Para que los enlaces funcionen en GitHub Pages, los archivos HTML de los capítulos
+                    deben estar dentro de la carpeta <strong>docs/</strong> y deben conservar exactamente
+                    los nombres usados en este índice.
+                </p>
+            </section>
+
+            <section class="card">
                 <h2>Autor</h2>
                 <p>
-                    <strong>Ing.Jaime Rojas C, Mgtr.</strong><br>
+                    <strong>Ing. Jaime Rojas C., Mgtr.</strong><br>
                     Universidad Católica de Cuenca<br>
                     Carrera de Ingeniería en Telecomunicaciones con Inteligencia Artificial
                 </p>
@@ -350,7 +298,6 @@
             <footer>
                 Módulo de Señales y Sistemas con MATLAB Live Script · GitHub Pages
             </footer>
-
         </main>
     </div>
 </body>
